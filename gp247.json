@@ -1,0 +1,14 @@
+{
+    "name": "SandboxDemo module",
+    "image": "images/sanbox-demo.jpg",
+    "auth": "GP247",
+    "email": "support@gp247.net",
+    "link": "https://GP247.net",
+    "configGroup": "Plugins",
+    "configCode": "SandboxDemo",
+    "configKey": "SandboxDemo",
+    "version": "1.0",
+    "requireCore": ["1.2"],
+    "requirePackages": [],
+    "requireExtensions": []
+}
