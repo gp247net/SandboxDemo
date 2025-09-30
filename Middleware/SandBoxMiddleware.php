@@ -122,12 +122,12 @@ class SandBoxMiddleware
     {
         return 
         // Core admin login
-        function_exists('admin') && admin()->user() 
+        (function_exists('admin') && admin()->user())
         // Partner login
-        || function_exists('partner') && partner()->user()
+        || (function_exists('partner') && partner()->user())
         // Pmo login
-        || function_exists('pmo') && pmo()->user() 
+        || (function_exists('pmo') && pmo()->user())
         // Vendor login
-        || function_exists('vendor') && vendor()->user();
+        || (function_exists('vendor') && vendor()->user());
     }
 }
