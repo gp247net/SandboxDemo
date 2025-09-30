@@ -25,10 +25,10 @@
      app('router')->aliasMiddleware('sandbox-demo', \App\GP247\Plugins\SandboxDemo\Middleware\SandBoxMiddleware::class);
 
      // Ensure runtime Router groups receive middleware even if groups were already registered
-     app('router')->pushMiddlewareToGroup('admin', 'sandbox-demo');
-     app('router')->pushMiddlewareToGroup('api.extend', 'sandbox-demo');
-     app('router')->pushMiddlewareToGroup('partner', 'sandbox-demo');
-     app('router')->pushMiddlewareToGroup('pmo', 'sandbox-demo');
+     app('router')->pushMiddlewareToGroup('admin', 'sandbox-demo'); //admin
+     app('router')->pushMiddlewareToGroup('api.extend', 'sandbox-demo'); //api
+     app('router')->pushMiddlewareToGroup('pmo_partner', 'sandbox-demo'); // pmo247
+     app('router')->pushMiddlewareToGroup('vendor', 'sandbox-demo'); // multi-vendor
      // For front, group may be registered later by FrontServiceProvider; we keep config above
 
  }
