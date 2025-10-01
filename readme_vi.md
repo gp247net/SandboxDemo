@@ -29,8 +29,11 @@ Plugin SandboxDemo cung cấp cơ chế “sandbox” để ngăn các thao tác
 
 ## 4. Lưu ý khi phát triển
 - Sandbox nhằm bảo vệ môi trường demo: hạn chế hành vi ghi/xóa nguy hiểm.
-- Khi nhanh chóng vô hiệu hóa Plugin, set giá trị `SANDBOX_DEMO_ENABLED=0` trong biến .env (bạn có thể thêm nếu biến chưa tồn tại).
-Lưu ý: SANDBOX_DEMO_ENABLED=0 sẽ vô hiệu hóa Plugin ngay cả khi nó đang được kích hoạt trong admin.
+- **Kích hoạt Plugin**: Mặc định, plugin sau khi cài đặt sẽ không được kích hoạt cho tới khi biến `SANDBOX_DEMO_ENABLED` trong file `.env` được set là `1`. Nếu chưa có biến này trong file `.env`, hãy thêm nó:
+  ```
+  SANDBOX_DEMO_ENABLED=1
+  ```
+Lưu ý rằng việc set `SANDBOX_DEMO_ENABLED=0` hoặc xóa biến SANDBOX_DEMO_ENABLED sẽ vô hiệu hóa Plugin ngay cả khi nó đang được kích hoạt trong admin.
 
 ## 5. Hỗ trợ
 - Website: `https://GP247.net`

@@ -29,8 +29,11 @@ The SandboxDemo plugin provides a “sandbox” mechanism to prevent dangerous w
 
 ## 4. Development Notes
 - Sandbox is designed to protect demo environments by restricting dangerous write/delete behaviors.
-- To quickly disable the plugin behavior, set `SANDBOX_DEMO_ENABLED=0` in your .env (you can add the variable if it doesn’t exist).
-Note: `SANDBOX_DEMO_ENABLED=0` disables the plugin even if it is enabled in admin.
+- **Plugin Activation**: By default, the plugin will not be activated after installation until the `SANDBOX_DEMO_ENABLED` variable in the `.env` file is set to `1`. If this variable doesn't exist in your `.env` file, add it:
+  ```
+  SANDBOX_DEMO_ENABLED=1
+  ```
+Note that setting `SANDBOX_DEMO_ENABLED=0` or removing the SANDBOX_DEMO_ENABLED variable will disable the plugin even if it is enabled in admin.
 
 ## 5. Support
 - Website: `https://GP247.net`
